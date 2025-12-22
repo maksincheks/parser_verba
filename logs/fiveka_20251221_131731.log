@@ -1,0 +1,165 @@
+2025-12-21 13:17:31 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: fiveka_scrapy)
+2025-12-21 13:17:31 [scrapy.utils.log] INFO: Versions: lxml 5.4.0.0, libxml2 2.11.9, cssselect 1.3.0, parsel 1.10.0, w3lib 2.3.1, Twisted 25.5.0, Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)], pyOpenSSL 25.1.0 (OpenSSL 3.5.0 8 Apr 2025), cryptography 45.0.4, Platform Windows-10-10.0.19045-SP0
+2025-12-21 13:17:31 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-12-21 13:17:31 [py.warnings] WARNING: C:\Users\maksi\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-12-21 13:17:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2025-12-21 13:17:31 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'fiveka_scrapy',
+ 'CONCURRENT_REQUESTS': 1,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 1,
+ 'DOWNLOAD_DELAY': 10,
+ 'LOG_FILE': 'logs/fiveka_20251221_131731.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'fiveka_scrapy.spiders',
+ 'SPIDER_MODULES': ['fiveka_scrapy.spiders']}
+2025-12-21 13:17:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'fiveka_scrapy.middlewares.FivekaSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-12-21 13:17:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-12-21 13:17:32 [scrapy.middleware] INFO: Enabled item pipelines:
+['fiveka_scrapy.pipelines.FivekaPipeline']
+2025-12-21 13:17:32 [scrapy.core.engine] INFO: Spider opened
+2025-12-21 13:17:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-12-21 13:17:32 [fiveka_scrapy.middlewares] INFO: 🚀 Инициализация Chrome драйвера...
+2025-12-21 13:17:35 [undetected_chromedriver.patcher] INFO: patching driver executable C:\Users\maksi\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-12-21 13:17:39 [fiveka_scrapy.middlewares] INFO: Chrome драйвер инициализирован
+2025-12-21 13:17:39 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog
+2025-12-21 13:17:53 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/skidki-nedeli--251C17046/
+2025-12-21 13:17:57 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/moreprodukty--251C13078/
+2025-12-21 13:18:02 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ryba--251C13077/
+2025-12-21 13:18:07 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/petelinka-na-uzhin--251C48781/
+2025-12-21 13:18:12 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/pashtety-zakuski--251C13087/
+2025-12-21 13:18:17 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/kolbasa-sosiski--251C13086/
+2025-12-21 13:18:22 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/kotlety-farsh--251C13084/
+2025-12-21 13:18:26 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ptitsa--251C13083/
+2025-12-21 13:18:41 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/myaso--251C13082/
+2025-12-21 13:19:01 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/khlebtsy-sukhari--251C13091/
+2025-12-21 13:19:11 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/sdoba-vypechka--251C13090/
+2025-12-21 13:19:24 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/khleb-lavash--251C13089/
+2025-12-21 13:19:34 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ispekli-dlya-vas--251C13088/
+2025-12-21 13:19:39 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/gotovimsya-k-prazdniku--251C48592/
+2025-12-21 13:19:43 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/yogurty-deserty--251C13098/
+2025-12-21 13:19:48 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/mayonez--251C13097/
+2025-12-21 13:19:53 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/yaytso-maslo--251C13096/
+2025-12-21 13:19:58 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/syr--251C13095/
+2025-12-21 13:20:03 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/kefir-tvorog--251C13094/
+2025-12-21 13:20:08 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/moloko-smetana--251C13093/
+2025-12-21 13:20:13 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/orekhi-sukhofrukty--251C13102/
+2025-12-21 13:20:26 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/frukty-yagody--251C13101/
+2025-12-21 13:20:31 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ovoshchi-zelen-griby--251C13100/
+2025-12-21 13:20:35 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 24 pages/min), scraped 0 items (at 0 items/min)
+2025-12-21 13:20:35 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/khurma-ploskaya--4309370/
+2025-12-21 13:20:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/khurma-azerbaydzhan-1-upakovka--3653969/
+2025-12-21 13:20:45 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/granat--79085/
+2025-12-21 13:21:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/yabloki-golden--48188/
+2025-12-21 13:21:29 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/pitakhayya--328/
+2025-12-21 13:21:49 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/banany-global-village--809/
+2025-12-21 13:22:11 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/klubnika-250g--26113/
+2025-12-21 13:22:34 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/apelsiny-global-village-otbornye--78650/
+2025-12-21 13:22:50 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/odezhda-i-aksessuary--251C12946/
+2025-12-21 13:23:02 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/dekor-dlya-doma--251C12945/
+2025-12-21 13:23:24 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/khoztovary--251C12944/
+2025-12-21 13:23:34 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/dacha-i-otdykh--251C12943/
+2025-12-21 13:23:47 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/kukhnya--251C12942/
+2025-12-21 13:23:57 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/aromaty-dlya-doma--251C13022/
+2025-12-21 13:24:09 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/predmety-dlya-uborki--251C13021/
+2025-12-21 13:24:19 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/chistyashchie-sredstva--251C13020/
+2025-12-21 13:24:27 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/dlya-mytya-posudy--251C13019/
+2025-12-21 13:24:39 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/stirka--251C13018/
+2025-12-21 13:24:49 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/apteka--251C13027/
+2025-12-21 13:25:01 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/bumaga-i-salfetki--251C13026/
+2025-12-21 13:25:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ukhod-za-polostyu-rta--251C13025/
+2025-12-21 13:25:10 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/brityo-depilyatsiya--251C43172/
+2025-12-21 13:25:26 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ukhod-za-telom-i-litsom--251C13024/
+2025-12-21 13:25:31 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ukhod-za-volosami--251C13023/
+2025-12-21 13:25:36 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/usiki-oblizhesh--251C48600/
+2025-12-21 13:25:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/dlya-drugikh-pitomtsev--251C13031/
+2025-12-21 13:25:45 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/dlya-sobak--251C13030/
+2025-12-21 13:25:50 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/dlya-koshek--251C13029/
+2025-12-21 13:25:55 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/shkola-i-khobbi--251C13036/
+2025-12-21 13:25:59 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 29 pages/min), scraped 0 items (at 0 items/min)
+2025-12-21 13:26:00 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-triol-dlya-melkikh-i-srednikh-popugaev-s--3436758/
+2025-12-21 13:26:04 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-triol-krispi-dlya-krolikov-500g--3304595/
+2025-12-21 13:26:09 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-triol-dlya-melkikh-i-srednikh-popugaev-s-fruk--3304590/
+2025-12-21 13:26:14 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-triol-dlya-gryzunov-s-kunzhutom-80g--3436754/
+2025-12-21 13:26:18 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-triol-krispi-dlya-gryzunov-500g--3304597/
+2025-12-21 13:26:23 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-triol-dlya-melkikh-i-srednikh-popugaev-s--3436748/
+2025-12-21 13:26:27 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-triol-dlya-kanareek-500g--3304599/
+2025-12-21 13:26:33 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-triol-krispi-ekstra-dlya-melkikh-i-srednikh-p--3304587/
+2025-12-21 13:26:37 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-triol-dlya-gryzunov-s-fruktami-3v1-80g--3436755/
+2025-12-21 13:26:42 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-triol-krispi-dlya-shinshil-i-dekorativnykh-kr--3487675/
+2025-12-21 13:26:46 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/seno-triol-krispi-dlya-gryzunov-15l--3300982/
+2025-12-21 13:26:51 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/opilki-triol-dlya-gryzunov-i-krolikov-20l--3642140/
+2025-12-21 13:26:56 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-sukhoy-alphapet-sp-s-yagnenkom-i-indeykoy-dly--4323706/
+2025-12-21 13:27:01 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-sukhoy-grandorf-yagnenok-s-indeykoy-dlya-doma--4259750/
+2025-12-21 13:27:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-sukhoy-grandorf-chetyre-vida-myasa-dlya-domas--4259768/
+2025-12-21 13:27:10 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-sukhoy-perfect-fit-sterile-s-kuritsey-dlya-st--3419251/
+2025-12-21 13:27:24 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-sukhoy-purina-one-dlya-koshek-s-indeykoy-i-ts--3398570/
+2025-12-21 13:27:45 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-sukhoy-perfect-fit-junior-s-kuritsey-dlya-kot--2157562/
+2025-12-21 13:27:50 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-dreamies-podushechki-s-govyadinoy-dlya-k--3383697/
+2025-12-21 13:27:58 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-gurme-naturalnye-retsepty-s-kuritsey--4039109/
+2025-12-21 13:28:03 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-perfect-fit-dlya-podderzhaniya-immunitet--4336111/
+2025-12-21 13:28:08 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/miska-arkhimed-dlya-zhivotnykh-v-assortimente-200m--4166684/
+2025-12-21 13:28:13 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/napolnitel-dlya-koshachego-tualeta-sisiket-komkuyu--3441245/
+2025-12-21 13:28:18 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/napolnitel-dlya-koshachikh-tualetov-cat-step-tofu--4085430/
+2025-12-21 13:28:22 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-sukhoy-miratorg-s-nezhnoy-telyatinoy-dlya-shc--4282637/
+2025-12-21 13:28:27 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/sukhoy-korm-miratorg-expert-berezhnaya-zabota-o-pi--4269542/
+2025-12-21 13:28:31 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-darling-kusochki-s-govyadinoy-v-podl--4292375/
+2025-12-21 13:28:36 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/nabor-karandashey-tsvetnykh-12-tsvetov--4389899/
+2025-12-21 13:28:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/albom-dlya-risovaniya-hatber-realno-krutoy-kapibar--4409954/
+2025-12-21 13:28:45 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/ruchka-centrum-pick-sharikovaya-sinyaya-1mm-1sht--4120268/
+2025-12-21 13:28:50 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/bloknot-centrum-v-kletku-141kh201mm-60l-v-assortim--4328885/
+2025-12-21 13:28:55 [scrapy.extensions.logstats] INFO: Crawled 84 pages (at 31 pages/min), scraped 8 items (at 8 items/min)
+2025-12-21 13:28:56 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/bloknot-prof-press-a6-40l-v-assortimente-1sht--4266767/
+2025-12-21 13:29:01 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/karandashi-centrum-plastikovye-chernografitnye-s-l--4262587/
+2025-12-21 13:29:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/nakleyki-meshu-obemnye-v-assortimente-1sht--4348750/
+2025-12-21 13:29:10 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tetrad-centrum-v-kletku-a5-96l-v-assortimente-1sht--4328705/
+2025-12-21 13:29:15 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/raskraska-umka-v-assortimente-1sht--4366882/
+2025-12-21 13:29:21 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/raskraska-umka-v-assortimente-1sht--4370360/
+2025-12-21 13:29:26 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tetrad-centrum-v-kletku-a5-48l-v-assortimente-1sht--4328703/
+2025-12-21 13:29:30 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/nabor-dlya-lepki-genio-kids-4-tsveta-ta1008--3491861/
+2025-12-21 13:29:35 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/miska-triol-metallicheskaya-350ml--3410406/
+2025-12-21 13:29:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-biff-dent-zhevatelnyy-snek-so-vkusom-kre--3410069/
+2025-12-21 13:29:44 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-cesar-tushenaya-telyatina-s-ovoshchami-v-zhel--4066606/
+2025-12-21 13:29:49 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/igrushka-triol-myach-dlya-sobak-s-pishchalkoy-1sht--4222126/
+2025-12-21 13:29:54 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kolbasa-titbit-kolbasnyy-dvor-fileynaya-narezka-dl--4198754/
+2025-12-21 13:29:59 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/pakety-triol-smennye-gigienicheskie-v-assortimente--3695317/
+2025-12-21 13:30:04 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-sukhoy-purina-one-mini-s-govyadinoy-i-risom-d--3445952/
+2025-12-21 13:30:08 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-titbit-noga-baranya-dlya-sobak-85g--5102/
+2025-12-21 13:30:13 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/lakomstvo-derevenskie-lakomstva-shashlychki-utinye--3658731/
+2025-12-21 13:30:18 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-felix-appetitnye-kusochki-s-yagnyonk--4249857/
+2025-12-21 13:30:23 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-felix-s-indeykoy-v-souse-so-vkusom-b--4249864/
+2025-12-21 13:30:27 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-felix-appetitnye-kusochki-s-govyadin--4249855/
+2025-12-21 13:30:32 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-felix-appetitnye-kusochki-s-kuritsey--4249854/
+2025-12-21 13:30:37 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-felix-sup-s-govyadinoy-v-souse-dlya--3931383/
+2025-12-21 13:30:42 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-felix-appetitnye-kusochki-s-kuritsey--4249850/
+2025-12-21 13:30:47 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-felix-appetitnye-kusochki-s-krolikom--4249856/
+2025-12-21 13:30:53 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-felix-sup-s-kuritsey-v-souse-dlya-vz--3931384/
+2025-12-21 13:30:54 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2025-12-21 13:30:54 [fiveka_scrapy.middlewares] ERROR: Ошибка загрузки https://5ka.ru/product/korm-vlazhnyy-felix-sup-s-kuritsey-v-souse-dlya-vz--3931384/: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2025-12-21 13:30:54 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/korm-vlazhnyy-katty-s-krolikom-i-indeykoy-v-souse--3617351/

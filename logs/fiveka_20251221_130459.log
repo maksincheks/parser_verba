@@ -1,0 +1,197 @@
+2025-12-21 13:04:59 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: fiveka_scrapy)
+2025-12-21 13:04:59 [scrapy.utils.log] INFO: Versions: lxml 5.4.0.0, libxml2 2.11.9, cssselect 1.3.0, parsel 1.10.0, w3lib 2.3.1, Twisted 25.5.0, Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)], pyOpenSSL 25.1.0 (OpenSSL 3.5.0 8 Apr 2025), cryptography 45.0.4, Platform Windows-10-10.0.19045-SP0
+2025-12-21 13:04:59 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-12-21 13:04:59 [py.warnings] WARNING: C:\Users\maksi\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-12-21 13:04:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2025-12-21 13:04:59 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'fiveka_scrapy',
+ 'CONCURRENT_REQUESTS': 1,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 1,
+ 'DOWNLOAD_DELAY': 10,
+ 'LOG_FILE': 'logs/fiveka_20251221_130459.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'fiveka_scrapy.spiders',
+ 'SPIDER_MODULES': ['fiveka_scrapy.spiders']}
+2025-12-21 13:05:00 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'fiveka_scrapy.middlewares.FivekaSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-12-21 13:05:00 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-12-21 13:05:00 [scrapy.middleware] INFO: Enabled item pipelines:
+['fiveka_scrapy.pipelines.FivekaPipeline']
+2025-12-21 13:05:00 [scrapy.core.engine] INFO: Spider opened
+2025-12-21 13:05:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-12-21 13:05:00 [fiveka_scrapy.middlewares] INFO: 🚀 Инициализация Chrome драйвера...
+2025-12-21 13:05:03 [undetected_chromedriver.patcher] INFO: patching driver executable C:\Users\maksi\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-12-21 13:05:07 [fiveka_scrapy.middlewares] INFO: Chrome драйвер инициализирован
+2025-12-21 13:05:07 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog
+2025-12-21 13:05:16 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/skidki-nedeli--251C17046/
+2025-12-21 13:05:21 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/khleb-lavash--251C13089/
+2025-12-21 13:05:26 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ispekli-dlya-vas--251C13088/
+2025-12-21 13:05:31 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/gotovimsya-k-prazdniku--251C48592/
+2025-12-21 13:05:35 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/yogurty-deserty--251C13098/
+2025-12-21 13:05:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/mayonez--251C13097/
+2025-12-21 13:05:45 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/yaytso-maslo--251C13096/
+2025-12-21 13:05:50 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/syr--251C13095/
+2025-12-21 13:05:55 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/kefir-tvorog--251C13094/
+2025-12-21 13:06:00 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/moloko-smetana--251C13093/
+2025-12-21 13:06:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/orekhi-sukhofrukty--251C13102/
+2025-12-21 13:06:10 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/frukty-yagody--251C13101/
+2025-12-21 13:06:15 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ovoshchi-zelen-griby--251C13100/
+2025-12-21 13:06:20 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/samyy-sezon--251C46496/
+2025-12-21 13:06:25 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/vkus-novogo-goda--251C45250/
+2025-12-21 13:06:29 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/ukrashenie-doma--251C44780/
+2025-12-21 13:06:34 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/podarki--251C44779/
+2025-12-21 13:06:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/fruktovaya-korzina--251C44778/
+2025-12-21 13:06:55 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/menyu-na-prazdnik--251C44777/
+2025-12-21 13:07:25 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/salatnaya-klassika--251C44776/
+2025-12-21 13:07:29 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/vsya-gotovaya-eda--251C16710/
+2025-12-21 13:07:34 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/nasha-pekarnya--251C13109/
+2025-12-21 13:07:39 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/sushi-i-rolly--251C13106/
+2025-12-21 13:07:44 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/catalog/osnovnye-blyuda-i-supy--251C13980/
+2025-12-21 13:07:48 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 25 pages/min), scraped 0 items (at 0 items/min)
+2025-12-21 13:07:49 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/onigiri-s-krabovymi-palochkami-i-sousom-spaysi-pya--4342266/
+2025-12-21 13:07:53 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/onigiri-s-tuntsom-i-sousom-spaysi-pyaterochka-kafe--4342264/
+2025-12-21 13:07:58 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/onigiradzu-creative-kitchen-s-kuritsey-i-vyalenymi--4388371/
+2025-12-21 13:08:03 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/roll-simfoniya-s-kuritsey-i-sousom-tsezar-pyateroc--4371000/
+2025-12-21 13:08:08 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/onigiri-s-tuntsom-konservirovannym-pyaterochka-kaf--4406922/
+2025-12-21 13:08:12 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/onigiri-s-kuritsey-teriyaki-pyaterochka-kafe-110g--4372188/
+2025-12-21 13:08:17 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/ponchiki-s-pudroy-s-170g--4432764/
+2025-12-21 13:08:22 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/ruletiki-iz-vetchiny-s-syrom-pyaterochka-kafe-150g--4308912/
+2025-12-21 13:08:27 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/napitok-global-village-tropicheskoe-mango-sokosode--4159740/
+2025-12-21 13:08:31 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/napitok-coca-cola-gazirovannyy-1l--5969/
+2025-12-21 13:08:36 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/vino-mucho-mas-beloe-polusukhoe-bezalkogolnoe-750m--4277317/
+2025-12-21 13:08:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/vino-mucho-mas-bezalkogolnoe-krasnoe-polusukhoe-75--4277323/
+2025-12-21 13:08:45 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tomaty-flamenko-slivovidnye-krasnye-450g--4217380/
+2025-12-21 13:08:49 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/salat-rukkola-75g--3657675/
+2025-12-21 13:08:54 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/ogurtsy-korotkoplodnye-450g--2250692/
+2025-12-21 13:08:59 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/goroshek-global-village-selection-zelenyy-400g--4078780/
+2025-12-21 13:09:04 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/salat-olive-pyaterochka-kafe-500g--4316741/
+2025-12-21 13:09:09 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/fasol-konservirovannaya-bondyuel-belaya-v-tomatnom--39419/
+2025-12-21 13:09:14 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/palochki-krabovye-russkoe-more-okhlazhdennye-400g--3931923/
+2025-12-21 13:09:18 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/shampinony-global-village-400g--3655737/
+2025-12-21 13:09:23 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/salat-seld-pod-shuboy-pyaterochka-kafe-500g--4317626/
+2025-12-21 13:09:27 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kartofel-mytyy-2-5kg--3129175/
+2025-12-21 13:09:32 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/grushi-konferentsiya--50911/
+2025-12-21 13:09:36 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kivi--78647/
+2025-12-21 13:09:41 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/khurma-shish-burun--4309366/
+2025-12-21 13:09:46 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tomaty-medovye-cherri-krasnye-kruglye-200g--3676649/
+2025-12-21 13:09:50 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tykva-batternat--3639814/
+2025-12-21 13:09:55 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/griby-enoki-100g--2143004/
+2025-12-21 13:10:00 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kapusta-kitayskaya--48687/
+2025-12-21 13:10:05 [scrapy.extensions.logstats] INFO: Crawled 54 pages (at 29 pages/min), scraped 0 items (at 0 items/min)
+2025-12-21 13:10:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/bifshteks-s-kartofelem-fri-145g--4435295/
+2025-12-21 13:10:10 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/gamburger-avtorskiy-s-brusnichnym-sousom-185g--4435426/
+2025-12-21 13:10:14 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kolbaski-s-khashbraunom-200g--4435292/
+2025-12-21 13:10:19 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/fishburger-s-kotletoy-iz-file-mintaya-zharenoy-175--4432769/
+2025-12-21 13:10:24 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/mitbolly-s-kartofelem-po-derevenski-180g--4435392/
+2025-12-21 13:10:28 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/chikenburger-150g--4435410/
+2025-12-21 13:10:33 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maknchiz-s-bekonom-180g--4435282/
+2025-12-21 13:10:38 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/shaurma-klassicheskaya-s-kuritsey-190g--4432797/
+2025-12-21 13:10:43 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/sendvich-gril-chiz-s-syrom-i-vetchinoy-90g--4432770/
+2025-12-21 13:10:47 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/roll-s-krevetkami-v-souse-sladkiy-chili-160g--4432793/
+2025-12-21 13:10:52 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/khot-dog-datskiy-180g--4435421/
+2025-12-21 13:11:00 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/frikadelki-kurinye-so-spagetti-pod-slivochnym-sous--4316736/
+2025-12-21 13:11:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/ukrashenie-seasons-novogodniy-shar-elochnoe--4413412/
+2025-12-21 13:11:10 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kruzhka-farfor-v-assortimente-360ml--4411411/
+2025-12-21 13:11:14 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/panno-svetodiodnoe-seasons-24kh18sm-v-assortimente--4414530/
+2025-12-21 13:11:26 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/figurka-seasons-novogodnee-volshebstvo-dekorativna--4413377/
+2025-12-21 13:11:31 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/ukrashenie-seasons-zvezda-dekorativnoe-elochnoe-20--4413028/
+2025-12-21 13:11:35 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tarelka-steklo-19-5kh16-5sm-1sht--4410054/
+2025-12-21 13:11:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/nakleyki-seasons-novyy-god-dekorativnye-v-assortim--4411779/
+2025-12-21 13:11:44 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/konteyner-liberhaus-dlya-produktov-germetichnyy-1l--4261158/
+2025-12-21 13:11:48 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/konteyner-liberhaus-dlya-produktov-germetichnyy-50--4261157/
+2025-12-21 13:11:53 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/figurka-seasons-snezhinka-dekorativnaya-novogodnya--4411780/
+2025-12-21 13:11:57 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/ukrashenie-seasons-balerina-elochnoe-1sht--4413375/
+2025-12-21 13:12:03 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/salatnik-farfor-16sm-1sht--4411417/
+2025-12-21 13:12:07 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kofe-v-zernakh-monarch-original-naturalnyy-zhareny--4291319/
+2025-12-21 13:12:12 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kofe-molotyy-carte-noire-original-200g--4416963/
+2025-12-21 13:12:16 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kofe-v-zernakh-carte-noire-original-zharenyy-200g--4416960/
+2025-12-21 13:12:21 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/pasta-milka-orekhovaya-s-dobavleniem-kakao-350g--4378992/
+2025-12-21 13:12:26 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/shokolad-milka-s-tselnym-fundukom-molochnyy-80g--4353876/
+2025-12-21 13:12:30 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/chaynyy-napitok-herbarus-assorti-24kh1-8g--4051237/
+2025-12-21 13:12:35 [scrapy.extensions.logstats] INFO: Crawled 84 pages (at 30 pages/min), scraped 30 items (at 30 items/min)
+2025-12-21 13:12:35 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/shokolad-vozdushnyy-belyy-poristyy-80g--4357764/
+2025-12-21 13:12:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/pechene-milka-s-kusochkami-molochnogo-shokolada-12--4346896/
+2025-12-21 13:12:45 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kofe-monarch-gold-arabica-naturalnyy-zharenyy-molo--4347224/
+2025-12-21 13:12:49 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kofe-molotyy-monarch-original-naturalnyy-zharenyy--4291307/
+2025-12-21 13:12:54 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/pena-slaym-dlya-vanny-baffy-s-syurprizom-detskaya--4172055/
+2025-12-21 13:12:58 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kofe-v-zernakh-monarch-original-naturalnyy-zhareny--4291325/
+2025-12-21 13:13:03 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/khurma-ploskaya--4309370/
+2025-12-21 13:13:10 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/khurma-azerbaydzhan-1-upakovka--3653969/
+2025-12-21 13:13:15 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/granat--79085/
+2025-12-21 13:13:19 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/yabloki-golden--48188/
+2025-12-21 13:13:23 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/pitakhayya--328/
+2025-12-21 13:13:28 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/banany-global-village--809/
+2025-12-21 13:13:32 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/klubnika-250g--26113/
+2025-12-21 13:13:38 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/apelsiny-global-village-otbornye--78650/
+2025-12-21 13:13:42 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/avokado-global-village-khass-2sht--3148279/
+2025-12-21 13:13:47 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/vinograd-shayn-muskat-nefritovyy--4327381/
+2025-12-21 13:13:51 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/keshyu--4064516/
+2025-12-21 13:13:56 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/funduk-mixbar-zharenye-yadra-100g--3982824/
+2025-12-21 13:14:01 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/semechki-dzhinn-solnechnyy-velikan-podsolnechnika--4155183/
+2025-12-21 13:14:06 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/smes-semushka-iz-orekhov-i-klyukvy-100g--4027702/
+2025-12-21 13:14:12 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/fistashki-neochishchennye-obzharennye-podsolennye--3933060/
+2025-12-21 13:14:17 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/mindal--4064518/
+2025-12-21 13:14:22 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/fistashki-mixbar-zharenye-solenye-100g--3977825/
+2025-12-21 13:14:26 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/gretskiy-orekh-semushka-110g--3428420/
+2025-12-21 13:14:30 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tvorog-savushkin-rassypchatyy-5-bzmzh-700g--4052128/
+2025-12-21 13:14:35 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tvorog-savushkin-khutorok-9-bzmzh-300g--3430150/
+2025-12-21 13:14:40 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/bioprodukt-laktomir-narine-forte-kislomolochnyy-3--4064476/
+2025-12-21 13:14:44 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kefir-molochnaya-kultura-3-5-4-5-bzmzh-500g--3421961/
+2025-12-21 13:14:49 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/syrok-tvorozhnyy-rostagroeksport-s-izyumom-0-bzmzh--3407482/
+2025-12-21 13:14:53 [scrapy.extensions.logstats] INFO: Crawled 113 pages (at 29 pages/min), scraped 60 items (at 30 items/min)
+2025-12-21 13:14:53 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/bioprodukt-bio-balans-kefirnyy-1-bzmzh-930g--2085953/
+2025-12-21 13:14:58 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tvorog-prostokvashino-traditsionnyy-9-bzmzh-180g--3487310/
+2025-12-21 13:15:05 [scrapy.extensions.logstats] INFO: Crawled 115 pages (at 2 pages/min), scraped 88 items (at 28 items/min)
+2025-12-21 13:15:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tvorog-vkusnoteevo-obezzhirennyy-bzmzh-750g--4068046/
+2025-12-21 13:15:09 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/massa-tvorozhnaya-rostagroeksport-osobaya-s-izyumo--3407477/
+2025-12-21 13:15:14 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tvorog-vkus-polza-plastovoy-5-bzmzh-300g--4367584/
+2025-12-21 13:15:19 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/tvorog-prostokvashino-5-bzmzh-200g--4121613/
+2025-12-21 13:15:31 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/slivki-sgushchyonnye-volokonovskoe-s-sakharom-19-b--3485806/
+2025-12-21 13:15:37 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/sgushchenka-ufood-market-kokosovaya-250g--4153757/
+2025-12-21 13:15:41 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/slivki-selo-zelenoe-dlya-vzbivaniya-ultrapasterizo--3671633/
+2025-12-21 13:15:46 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/kokteyl-molochnyy-avishka-klubnika-2-5-bzmzh-200ml--3129012/
+2025-12-21 13:15:50 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/slivki-domik-v-derevne-10-200g--44824/
+2025-12-21 13:15:55 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/smetana-prostokvashino-20-bzmzh-300g--4121609/
+2025-12-21 13:16:00 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/moloko-parmalat-ultrapasterizovannoe-1-8-bzmzh-1l--70710/
+2025-12-21 13:16:04 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/napitok-planto-soevyy-so-vkusom-vanilnogo-plombira--4312741/
+2025-12-21 13:16:09 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/krem-hulala-na-rastitelnom-masle-vzbityy-ultrapast--3622127/
+2025-12-21 13:16:14 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-slivochnoe-ekomilk-shokoladnoe-62-bzmzh-180g--55066/
+2025-12-21 13:16:18 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-sladkoslivochnoe-iskrenne-vash-traditsionnoe--3643092/
+2025-12-21 13:16:22 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/yaytsa-esh-khoroshee-kurinye-stolovye-so-10sht--4360702/
+2025-12-21 13:16:27 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-ekomilk-krestyanskoe-slivochnoe-72-5-bzmzh-1--4357094/
+2025-12-21 13:16:32 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-slivochnoe-ekoniva-traditsionnoe-82-5-bzmzh--3922315/
+2025-12-21 13:16:37 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-vkusnoteevo-traditsionnoe-slivochnoe-82-5-bz--4310021/
+2025-12-21 13:16:42 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-slivochnoe-ekoniva-traditsionnoe-82-5-bzmzh--4135603/
+2025-12-21 13:16:47 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-tysyacha-ozer-slivochnoe-bezlaktoznoe-82-5-b--4196090/
+2025-12-21 13:16:52 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-aleksandrovskaya-ferma-slivochnoe-sladko-sli--4285473/
+2025-12-21 13:16:56 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-president-kisloslivochnoe-nesolenoe-82-bzmzh--4255306/
+2025-12-21 13:17:00 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-ekomilk-traditsionnoe-sladko-slivochnoe-neso--4302750/
+2025-12-21 13:17:05 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/maslo-toplenoe-vasteko-gkhi-99-bzmzh-400g--3939636/
+2025-12-21 13:17:09 [fiveka_scrapy.middlewares] INFO: Загружаю: https://5ka.ru/product/mayonez-sloboda-olivkovyy-67-800ml--3163111/
+2025-12-21 13:17:13 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
